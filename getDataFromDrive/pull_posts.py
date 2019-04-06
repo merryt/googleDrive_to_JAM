@@ -5,8 +5,11 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from apiclient import errors
 import argparse
+import re
 
 # If modifying these scopes, delete the file token.pickle.
+from slugify import slugify
+
 SCOPES = ['https://www.googleapis.com/auth/documents.readonly', 'https://www.googleapis.com/auth/drive.metadata.readonly']
 
 
@@ -79,13 +82,13 @@ def print_files_in_folder(service, folder_id):
     return pages
 
 
-def get_file_by_id(service, id):
-    return service.documents().get(documentId=id).execute()
+def get_file_by_id(service, file_id):
+    return service.documents().get(documentId=file_id).execute()
 
 
 def write_file_to_markdown(document):
     title = document.get('title')
-    file_name = title.replace(" ", "-") + ".md"
+    file_name = slugify(title) + ".md"
 
     file = open("../markdown/{}".format(file_name), "w")
     content = document.get("body").get("content")
