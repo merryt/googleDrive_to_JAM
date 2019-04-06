@@ -1,4 +1,4 @@
-credentials.json
+getDataFromDrive/credentials.json
 /drive-pull
 *.DS_Store
 /getDataFromDrive/credentials.json
