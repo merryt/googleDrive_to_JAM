@@ -4,6 +4,7 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from apiclient import errors
+import argparse
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/documents.readonly', 'https://www.googleapis.com/auth/drive.metadata.readonly']
@@ -13,6 +14,10 @@ def main():
     """Shows basic usage of the Docs API.
     Prints the title of a sample document.
     """
+    parser = argparse.ArgumentParser(description="Pulls data from all google docs in the directory ID you pass in.")
+    parser.add_argument('folder_id', help='ID From the URL of the Google Docs Folder You are Importing')
+    folder_id = parser.parse_args().folder_id
+
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
@@ -35,7 +40,7 @@ def main():
     service_drive = build('drive', 'v2', credentials=creds)
 
     # list files in folder
-    pages = print_files_in_folder(service_drive, "1esx3p7alBwcmLdjAmQzIeGenwKFlVH07")
+    pages = print_files_in_folder(service_drive, folder_id)
 
     # Retrieve the documents contents from the Docs service.
     for page in pages:
