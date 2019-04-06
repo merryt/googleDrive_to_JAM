@@ -1,0 +1,4 @@
+/drive-pull
+*.DS_Store
+/getDataFromDrive/credentials.json
+/getDataFromDrive/token.pickle
