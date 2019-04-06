@@ -76,7 +76,7 @@ def print_files_in_folder(service, folder_id):
       page_token = children.get('nextPageToken')
       if not page_token:
         break
-    except errors.HttpError, error:
+    except errors.HttpError as error:
       print('An error occurred: {}'.format(error))
       break
 
