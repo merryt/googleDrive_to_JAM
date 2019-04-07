@@ -1,5 +1,5 @@
 getDataFromDrive/credentials.json
-/drive-pull
+getdatafromdrive/pull-env
 *.DS_Store
 /getDataFromDrive/credentials.json
 /getDataFromDrive/token.pickle

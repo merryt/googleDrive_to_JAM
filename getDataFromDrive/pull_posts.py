@@ -95,7 +95,19 @@ def write_file_to_markdown(document):
     for block in content:
         if block.get("paragraph"):
             content = block.get("paragraph").get("elements")[0].get("textRun").get("content")
+            content = re.sub('<', '\<', content)
+            content = re.sub('>', '\>', content)
+
+            # handle tabs
+            indent = block.get("paragraph").get("paragraphStyle").get("indentFirstLine")
+            if indent and indent.get("magnitude", 0) > 0:
+                if block.get("paragraph").get("bullet"):
+                    content = "- " + content
+                else:
+                    content = "\t" + content
+
             file.write(content)
+
     file.close()
 
     print('The title of the document is: {}'.format(document.get('title')))
