@@ -1,5 +1,8 @@
+import io
 import pickle
 import os.path
+
+import mammoth
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
@@ -8,9 +11,10 @@ import argparse
 import re
 
 # If modifying these scopes, delete the file token.pickle.
+from googleapiclient.http import MediaIoBaseDownload
 from slugify import slugify
 
-SCOPES = ['https://www.googleapis.com/auth/documents.readonly', 'https://www.googleapis.com/auth/drive.metadata.readonly']
+SCOPES = ['https://www.googleapis.com/auth/documents.readonly', 'https://www.googleapis.com/auth/drive.readonly']
 
 
 def main():
@@ -49,7 +53,9 @@ def main():
     for page in pages:
         print(page)
         document = get_file_by_id(service_docs, page)
-        write_file_to_markdown(document)
+        #write_file_to_markdown(document)
+        export_file_to_docx(document, service_drive)
+        export_docx_file_to_markdown(document)
 
 
 def print_files_in_folder(service, folder_id):
@@ -88,29 +94,34 @@ def get_file_by_id(service, file_id):
 
 def write_file_to_markdown(document):
     title = document.get('title')
-    file_name = slugify(title) + ".md"
 
-    file = open("../markdown/{}".format(file_name), "w")
-    content = document.get("body").get("content")
-    for block in content:
-        if block.get("paragraph"):
-            content = block.get("paragraph").get("elements")[0].get("textRun").get("content")
-            content = re.sub('<', '\<', content)
-            content = re.sub('>', '\>', content)
-
-            # handle tabs
-            indent = block.get("paragraph").get("paragraphStyle").get("indentFirstLine")
-            if indent and indent.get("magnitude", 0) > 0:
-                if block.get("paragraph").get("bullet"):
-                    content = "- " + content
-                else:
-                    content = "\t" + content
-
-            file.write(content)
-
-    file.close()
+    with open(f"../markdown/{slugify(title)}.md", "w") as file:
+        content = document.get("body").get("content")
+        for block in content:
+            if block.get("paragraph"):
+                content = block.get("paragraph").get("elements")[0].get("textRun").get("content")
+                file.write(content)
 
     print('The title of the document is: {}'.format(document.get('title')))
+
+
+def export_file_to_docx(document, service):
+    title = document.get('title')
+    request = service.files().export_media(fileId=document.get('documentId'), mimeType='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+    with open(f"../docx/{slugify(title)}.docx", mode='wb') as fh:
+        downloader = MediaIoBaseDownload(fh, request)
+        done = False
+        while done is False:
+            status, done = downloader.next_chunk()
+            print("Download %d%%." % int(status.progress() * 100))
+
+
+def export_docx_file_to_markdown(document):
+    title = document.get('title')
+    with open(f"../docx/{slugify(title)}.docx", "rb") as docx_file:
+        result = mammoth.convert_to_markdown(docx_file)
+        with open(f"../markdown/{slugify(title)}.md", "w") as file:
+            file.write(result.value)
 
 
 if __name__ == '__main__':
