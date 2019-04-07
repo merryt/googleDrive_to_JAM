@@ -8,7 +8,7 @@
 
 *Image source: Getty Images\.*
 
-It's no secret that bad credit can cost you money, but what consumers often don't realize is just how expensive it can be\.
+It's no secret that *bad* credit can __cost__ you money, __but__ what __consumers__ often don't realize is just how expensive it can be\.
 
 Your credit score will obviously come into play whenever you're borrowing money, and it can also affect monthly expenses, such as your auto insurance premiums\. If your credit isn't the best right now, a look at how much that costs you could be just the motivation needed to boost your score\.
 
@@ -16,21 +16,21 @@ Here's how much more you'll pay with bad credit for a home, insurance, and more\
 
 ## <a id="_ez503xjj2mfc"></a>Mortgages
 
-According to MyFICO, the annual percentage rate \(APR\) on a mortgage can vary by over 1\.5% depending on your credit score\. That may not seem like much, but it makes a huge impact on how much you pay over the lifespan of the loan\.
+According to MyFICO, the __annual percentage__ rate \(APR\) on a mortgage can vary by over 1\.5% depending on your credit score\. That __may not seem like much,__ but it makes a huge impact on how much you pay over the lifespan of the loan\.
 
 To qualify for a traditional mortgage, you typically need a credit score of 620 or higher\. Here's how much your payments will differ on a 30\-year, fixed\-rate $250,000 mortgage with excellent credit compared to that minimum of 620\.
 
 __760 or above:__
 
-- __APR: __027%
-- __Monthly mortgage payment: __$1,197
-- __Total interest paid: __$181,076
+- __APR:__ 027%
+- __Monthly mortgage payment:__ $1,197
+- __Total interest paid:__ $181,076
 
 __620 to 639:__
 
-- __APR: __616%
-- __Monthly mortgage payment: __$1,438
-- __Total interest paid: __$267,579
+- __APR:__ 616%
+- __Monthly mortgage payment:__ $1,438
+- __Total interest paid:__ $267,579
 
 __Total cost of bad credit:__ $241 per month and $86,503 over the life of the loan
 
@@ -42,15 +42,15 @@ For this example, we're going with a 60\-month new car loan for $20,000 and usin
 
 __720 or above:__
 
-- __APR: __567%
-- __Monthly loan payment: __$373
-- __Total interest paid: __$2,408
+- __APR:__ 567%
+- __Monthly loan payment:__ $373
+- __Total interest paid:__ $2,408
 
 __589 or below:__
 
-- __APR: __188%
-- __Monthly loan payment: __$499
-- __Total interest paid: __$9,945
+- __APR:__ 188%
+- __Monthly loan payment:__ $499
+- __Total interest paid:__ $9,945
 
 __Total cost of bad credit:__ $126 per month and $7,537 over the life of the loan
 
@@ -62,8 +62,8 @@ The only exception is if you live in California, Massachusetts, or Hawaii, becau
 
 Otherwise, here's what the average driver pays for auto insurance with an excellent and not\-so\-excellent credit score, according to The Zebra's 2019 "The State of Auto Insurance" report:
 
-- __800 or higher credit score __\-\- Approximately $1,297 per year
-- __579 or lower credit score __\-\- Approximately $2,717 per year
+- __800 or higher credit score__ \-\- Approximately $1,297 per year
+- __579 or lower credit score__ \-\- Approximately $2,717 per year
 
 __Total cost of bad credit:__ $1,420 per year
 

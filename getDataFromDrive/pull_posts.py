@@ -53,7 +53,7 @@ def main():
     for page in pages:
         print(page)
         document = get_file_by_id(service_docs, page)
-        #write_file_to_markdown(document)
+        # write_file_to_markdown(document)
         export_file_to_docx(document, service_drive)
         export_docx_file_to_markdown(document)
 
@@ -120,8 +120,12 @@ def export_docx_file_to_markdown(document):
     title = document.get('title')
     with open(f"../docx/{slugify(title)}.docx", "rb") as docx_file:
         result = mammoth.convert_to_markdown(docx_file)
+        fixed_md = result.value
+        fixed_md = re.sub(r"([\w:$-]?)([ \t]*?)__([ \t]*?)([\w:$]+?[\w \t]*?[\w:$,;]+?)([ \t]*?)__([ \t\\-]*?)([\w:$]+?)", r"\1\2\3__\4__\5\6\7", fixed_md)
+        fixed_md = re.sub(r"([\w:$-]?)([ \t]*?)\*\*([ \t]*?)([\w:$]+?[\w \t]*?[\w:$,;]+?)([ \t]*?)\*\*([ \t\\-]*?)([\w:$]+?)", r"\1\2\3**\4**\5\6\7", fixed_md)
+        fixed_md = re.sub(r"([\w:$-]?)([ \t]*?)\*([ \t]*?)([\w:$]+?[\w \t]*?[\w:$,;]+?)([ \t]*?)\*([ \t\\-]*?)([\w:$]+?)", r"\1\2\3*\4*\5\6\7", fixed_md)
         with open(f"../markdown/{slugify(title)}.md", "w") as file:
-            file.write(result.value)
+            file.write(fixed_md)
 
 
 if __name__ == '__main__':
