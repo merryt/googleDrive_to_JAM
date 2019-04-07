@@ -1,1 +1,2 @@
-This is an article.
+This is an article\.
+
