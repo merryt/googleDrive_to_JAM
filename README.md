@@ -7,7 +7,9 @@ the goal of this experiment is to take google drive items and convert them to a 
 - Go to google drive API and generate your credentials.json and save them to getDataFromDrive
 - navigate to getDataFromDrive.
 - change your target folder in pull_posts.py to something in your personal google drive.
-- run pull_posts.py (if its your first time create a virtual env and pip install requirements)
+- if this is your first time create a virtualenv and pip install requirements
+- run pull_posts.py xxx (where xxx is your folder... Tymerrycom is `1_UDXKIeaBFulIxV9EEdRCZqcstiOrkZU`)
+-
 This will create a new folder in the projects root called markdown... we will need this later
 
 
