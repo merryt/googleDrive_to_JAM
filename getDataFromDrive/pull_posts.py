@@ -53,7 +53,7 @@ def main():
     for page in pages:
         print(page)
         document = get_file_by_id(service_docs, page)
-        write_file_to_markdown(document)
+        #write_file_to_markdown(document)
         export_file_to_docx(document, service_drive)
         export_docx_file_to_markdown(document)
 
