@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: BOOKS I READ IN 2014\!
 
@@ -6,7 +6,7 @@ Date: 2015\-3\-10
 
 Author: Tyler
 
-\-\-\-
+---
 
 __Turn the Ship Around\!: A True Story of Turning Followers into Leaders__ — Written by: L\. David Marquet — This book is the story of a US Navy officer who was trained to command a nuclear submarine\. After giving an impossible order he was surprised that his crew still tried to follow it\. When asked why they didn't challenge his order they responded “because you told me to\.” It was at this point he started his idea of bottom up leadership\. L\. David Marquet is a solid story teller\. I enjoyed the classic set up story, build characters, establish conflict, come to resolution\. I find this classic story arc very beneficial in a book that has a pretty heavy self improvement theme\. The tempo and character development encouraged me to imagine life from each characters point of view, and then looked for parallels in each characters to myself and people I worked with and for\.
 

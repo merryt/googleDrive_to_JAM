@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: BEST GAME TO STREAM
 
@@ -6,7 +6,7 @@ Date: 2016\-11\-3
 
 Author: Tyler
 
-\-\-\-
+---
 
 The goal of this project it to:
 

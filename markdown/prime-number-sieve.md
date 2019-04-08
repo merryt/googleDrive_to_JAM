@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: PRIME NUMBER SIEVE
 
@@ -6,7 +6,7 @@ Date: 2017\-1\-3
 
 Author: Tyler
 
-\-\-\-
+---
 
 The goal of this project it to:
 

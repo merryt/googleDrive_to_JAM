@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: Test Driven UX
 
@@ -6,7 +6,7 @@ Date: 2019\-4\-5
 
 Author: Tyler
 
-\-\-\-
+---
 
 Test driven development has been around for 12 years and in the past ~3 it has really transformed from best practice to standard place\. TDD transends programming languages, coding best practices, and software development processes \(waterfall, agile, XP, etc\)\. The reason it continues to take over the world of software development is because it is scalable\. It allows a
 

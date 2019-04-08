@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: STOCK PRICES
 
@@ -6,7 +6,7 @@ Date: 2016\-11\-3
 
 Author: Tyler
 
-\-\-\-
+---
 
 You are handed a Back To The Future 2 style book\. Instead of the almanac though, its tomorrows stock results\. For this exercise we are going to work out a way to figure out how to maximize our returns on the following
 

@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: MY DESIGN PROCESS
 
@@ -6,7 +6,7 @@ Date: 2015\-9\-13
 
 Author: Tyler
 
-\-\-\-
+---
 
 ### <a id="_h52sutg3gvrg"></a>__MY PERSONAL UX AND VISUAL DESIGN PROCESS__
 

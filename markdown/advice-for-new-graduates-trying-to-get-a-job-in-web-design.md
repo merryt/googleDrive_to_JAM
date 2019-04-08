@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: Advice for new graduates trying to get a job in web design\!
 
@@ -13,7 +13,7 @@ Tags:
 
 Description: Post graduation you will be staring at one of the hardest challenges of your life, here are a couple quick tips to land that first job\.
 
-\-\-\-
+---
 
 Advice for new graduates trying to get a job in web design\!
 

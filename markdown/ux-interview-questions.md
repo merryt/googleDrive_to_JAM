@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: UX INTERVIEW QUESTIONS
 
@@ -6,7 +6,7 @@ Date: 2017\-12\-10
 
 Author: Tyler
 
-\-\-\-
+---
 
 Over the years I have been apart of several interview teams, and have been interviewed several times for new jobs\. I realized pretty quick questions I like to have answered and the questions I like to ask\. Normally during interviews, I don't ask ALL of these questions\. I do however treat the categories as an outline and like to make sure each category is represented befor making a hire\. SO for categories like "skills" I can ask questions, or if their portfolio clearly answers my questions I will skip this category\.
 

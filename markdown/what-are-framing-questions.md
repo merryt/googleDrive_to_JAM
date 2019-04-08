@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: WHAT ARE FRAMING QUESTIONS?
 
@@ -6,7 +6,7 @@ Date: 2016\-2\-14
 
 Author: Tyler
 
-\-\-\-
+---
 
 When conducting [user research](http://tymerry.com/getting-started-with-user-research/) it is important to start on the right foot\. A good starting point is to define what exactly it is you want to accomplish through this research\. This is where framing questions come into play\. Framing questions normally follow the format of "5Ws and an H"\. These questions have been around for quite some time normally used by reports these questions answer who, what, when, where, why, and how\.
 

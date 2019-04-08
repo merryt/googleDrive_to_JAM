@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: PEBBLE ROCKS BOULDER 
 
@@ -6,7 +6,7 @@ Date: 2015\-9\-5
 
 Author: Tyler
 
-\-\-\-
+---
 
 The first night of the pebble hackathon comes to an end\. Viget and pebble are hosing a great event with tons of food, free swag, and really smart people\. Learning about the pebble smart strap interface proved to be interesting\. This is my first hands on experience with the pebble watch, and I find it is a really good life style fit for me compared to my apple watch\. Battery life, ux, and an always on screen are pretty huge in my book\. Lack of touch screen was rough at first, but I do love not cleaning my watch face every 30 minutes\. There is a ton of potential for cool accessories with the smart strap, so I am excited to see what the weekend yields\.
 

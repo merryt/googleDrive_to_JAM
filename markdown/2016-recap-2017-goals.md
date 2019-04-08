@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: 2016 RECAP, 2017 GOALS
 
@@ -6,7 +6,7 @@ Date: 2016\-12\-27
 
 Author: Tyler
 
-\-\-\-
+---
 
 ### <a id="_7f0xdxqy6xh9"></a>__2016 ACCOMPLISHMENTS__
 

@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: Don’t listen to your users have them show you
 
@@ -6,7 +6,7 @@ Date: 2015\-5\-2020
 
 Author: Tyler
 
-\-\-\-
+---
 
 How many times have you lived this story? A user has a problem with your product, and is nice enough to inform you of their issue\. The problem gets vetted, and interpreted to a bug or story\. This bug or story contains the problem, and a proposed fix\. The diligent design and development teams follows the instructions to a “T” and fixes the bug, or creates a new feature\. The user gets the feature, but doesn’t actually solve their problem\. WHAT HAPPENED?\!
 

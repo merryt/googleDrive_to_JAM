@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: __IS WEB DESIGN DEAD?__
 
@@ -6,7 +6,7 @@ Date: 2015\-6\-30
 
 Author: Tyler
 
-\-\-\-
+---
 
 There is a new product that has slowly been gaining traffic called [the grid](https://thegrid.io/)\. The Grid has a really impactful product video that was created by the ever powerful sandwich video\.
 

@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: FINANCIAL INDEPENDENCE\.\.\. MEH
 
@@ -6,7 +6,7 @@ Date: 2016\-2\-2
 
 Author: Tyler
 
-\-\-\-
+---
 
 For the past three years I have focused the majority of my energy onto the goal of achieving financial independence as quickly as possible\. Financial independence is reducing your spending to a point where you can save ~28 times as much as you spend every year\. You save this money in low cost index funds, real estate, or other investments that can give you an average return\. In the 5 years since graduating from Campbell University I have managed to pay off my ~27k of student loans, stock up 35k in retirement savings, and buy a condo walking distance from my current job\. Over the past year however I have become more complacent with my situation in life\. I try my "best," but the fire to improve is gone\. I have a calm that comes from "in 20 years this will all be behind me\. This calm has lead to a decreased desire to learn, and an increased desire slow down, and watch TV\.
 

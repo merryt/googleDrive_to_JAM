@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: THE MARSHMALLOW CHALLENGE FINDINGS NEED UPDATED
 
@@ -6,7 +6,7 @@ Date: 2015\-6\-2015
 
 Author: Tyler
 
-\-\-\-
+---
 
 The [marshmallow challenge](http://marshmallowchallenge.com/) has been spreading in the creative thinking space quite rapidly recently\. For those who don’t know the goal of the marshmallow challenge is to build the largest tower that can support a marshmallow on the top\. The challenge is gaining popularity because an interesting observation, kindergartners on average build taller towers than business school graduates\. Over the past month or so I have done the challenge with 40 children ranging from seven to sixteen years old\.
 

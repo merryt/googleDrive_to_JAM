@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Data: 2015\-5\-20
 
@@ -6,7 +6,7 @@ Title: Please get comfortable throwing things away
 
 Author: Tyler
 
-\-\-\-
+---
 
 Please get comfortable throwing things away
 

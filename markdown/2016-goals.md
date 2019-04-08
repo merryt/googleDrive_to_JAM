@@ -1,12 +1,9 @@
-\-\-\-
-
-Title: My Goals as of 2016
-
-Date: 2016\-9\-8
-
-Author: Tyler
-
-\-\-\-
+---
+title: My Goals as of 2016
+date: 2016\-9\-8
+author: Tyler
+lang: en-US
+---
 
 ###### <a id="_38n6liwrupl3"></a>__BE A BETTER FRONT END WEB DEVELOPER__
 
@@ -57,4 +54,3 @@ Author: Tyler
 
 - Have 30 times my annual spending saved \(currently have two times saved\) \(still only have 2x because I got an expensive house on a 15 year morgage\)
 - Be able to pursue life goals with out being motivated by money\.
-

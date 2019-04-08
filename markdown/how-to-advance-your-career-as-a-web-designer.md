@@ -1,4 +1,4 @@
-\-\-\-
+---
 
 Title: HOW TO ADVANCE YOUR CAREER AS A WEB DESIGNER\.
 
@@ -6,7 +6,7 @@ Date: 2015\-6\-10
 
 Author: Tyler
 
-\-\-\-
+---
 
 As an entry level web designer you will be given tasks the runt of the litter tasks, and you will get paid very little for it\. My first job out of school had the title of “web designer,” but that gave the position to much credit\. We frequently joked that our job was to “make it pretty\.” We took large 75\+ page powerpoint presentations that were mostly text heavy, and make them more professional for presentations\. We did this from within the shackles of not being able to simplify data, or shorten presentation\. I don’t blame the company or coworkers at all, they were hiring kids strait out of school with no IA/IX experience\. To compound the issue we worked extremely long hours to clean up and add graphics to these massive slide decks\. It was a rough situation for any designer, but being a young designer out of school I was happy to have the opportunity to sling pixels, even if it was in powerpoint\. I did all this for about 1/2 of what I am currently making\. As I look back I gained SUCH valuable experience at that job\. Some of the lessons I learned I am sure could have been gained with out working 100 hours in a week, but I don’t know if they would be seared in as firmly\.
 
