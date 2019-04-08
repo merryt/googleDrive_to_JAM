@@ -1,6 +1,8 @@
 ---
+blog_index: true
+Date: 2012-3-3
 home: true
-heroImage: /hero.png
+heroImage: https://images.bigcartel.com/theme_images/28071983/JAM-Logo-2016.jpg
 actionText: Get Started →
 actionLink: /guide/
 features:
@@ -13,7 +15,4 @@ features:
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-
-
-Index Page!
------------
+# we are on the home page

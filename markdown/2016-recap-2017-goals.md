@@ -1,11 +1,7 @@
 ---
-
 Title: 2016 RECAP, 2017 GOALS
-
 Date: 2016\-12\-27
-
 Author: Tyler
-
 ---
 
 ### <a id="_7f0xdxqy6xh9"></a>__2016 ACCOMPLISHMENTS__
@@ -66,4 +62,3 @@ My 2016 goals should ideally follow my [life goals](http://tymerry.com/my-top-10
 - Write 12 things \(blog posts, books, etc\)
 - Travel to Italy and Siesta Keys with only a backpack\.
 - Keep on saving\!
-

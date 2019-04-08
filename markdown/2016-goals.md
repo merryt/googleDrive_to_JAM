@@ -1,8 +1,8 @@
 ---
-title: My Goals as of 2016
-date: 2016\-9\-8
-author: Tyler
-lang: en-US
+Title: My Goals as of 2016
+Date: 2016\-9\-8
+Author: Tyler
+Lang: en-US
 ---
 
 ###### <a id="_38n6liwrupl3"></a>__BE A BETTER FRONT END WEB DEVELOPER__
