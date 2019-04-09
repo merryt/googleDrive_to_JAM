@@ -124,6 +124,7 @@ def export_docx_file_to_markdown(document):
         fixed_md = re.sub(r"([\w:$-]?)([ \t]*?)__([ \t]*?)([\w:$]+?[\w \t]*?[\w:$,;]+?)([ \t]*?)__([ \t\\-]*?)([\w:$]+?)", r"\1\2\3__\4__\5\6\7", fixed_md)
         fixed_md = re.sub(r"([\w:$-]?)([ \t]*?)\*\*([ \t]*?)([\w:$]+?[\w \t]*?[\w:$,;]+?)([ \t]*?)\*\*([ \t\\-]*?)([\w:$]+?)", r"\1\2\3**\4**\5\6\7", fixed_md)
         fixed_md = re.sub(r"([\w:$-]?)([ \t]*?)\*([ \t]*?)([\w:$]+?[\w \t]*?[\w:$,;]+?)([ \t]*?)\*([ \t\\-]*?)([\w:$]+?)", r"\1\2\3*\4*\5\6\7", fixed_md)
+        fixed_md = re.sub(r"\\-\\-\\-", "---", fixed_md)
         with open(f"../markdown/{slugify(title)}.md", "w") as file:
             file.write(fixed_md)
 
