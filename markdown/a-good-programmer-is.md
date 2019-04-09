@@ -1,14 +1,14 @@
----
+\-\--
 
-Title: A GOOD PROGRAMMER IS…
+Title: A GOOD PROGRAMMER IS...
 
-Date: 2016\-6\-1
+Date: 2016-6-1
 
 Author: Tyler
 
----
+\-\--
 
-*A good programmer is someone who always looks both ways before crossing a one\-way street\.*
+> *A good programmer is someone who always looks both ways before
+> crossing a one-way street.*
 
 \- Doug Linder
-
