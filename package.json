@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "vuepress dev markdown",
-    "build": "vuepress build markdown"
+    "build": "vuepress build markdown",
+    "pullfiles": "node pullFiles.js"
   },
   "dependencies": {
     "async": "^2.6.2",

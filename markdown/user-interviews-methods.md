@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: USER INTERVIEWS METHODS
 
@@ -6,7 +6,7 @@ Date: 2016-3-15
 
 Author: Tyler
 
-\-\--
+---
 
 *This post is a follow up to a [[previous
 post]{.underline}](https://www.tymerry.com/user-interview-methods/tymerry.com/getting-started-with-user-research/)

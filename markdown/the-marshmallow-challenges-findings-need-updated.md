@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: THE MARSHMALLOW CHALLENGE FINDINGS NEED UPDATED
 
@@ -6,7 +6,7 @@ Date: 2015-6-2015
 
 Author: Tyler
 
-\-\--
+---
 
 The [[marshmallow
 challenge]{.underline}](http://marshmallowchallenge.com/) has been

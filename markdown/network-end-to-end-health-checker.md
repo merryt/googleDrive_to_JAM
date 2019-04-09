@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: NETWORK END-TO-END HEALTH CHECKER
 
@@ -6,7 +6,7 @@ Date: 2017-12-11
 
 Author: Tyler
 
-\-\--
+---
 
 I am helping a friend with a business he is starting. One thing he wants
 is the ability to test a network health remotely and regularly from an

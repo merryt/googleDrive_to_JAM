@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: Don't listen to your users have them show you
 
@@ -6,7 +6,7 @@ Date: 2015-5-2020
 
 Author: Tyler
 
-\-\--
+---
 
 How many times have you lived this story? A user has a problem with your
 product, and is nice enough to inform you of their issue. The problem

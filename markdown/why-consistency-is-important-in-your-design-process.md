@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: Why consistency is important in your design process
 
@@ -6,7 +6,7 @@ Date: 2015-5-20
 
 Author: Tyler
 
-\-\--
+---
 
 One thing we designers don't always take into account nearly enough is
 the value of consistency. We let our schedules go crazy, we strike

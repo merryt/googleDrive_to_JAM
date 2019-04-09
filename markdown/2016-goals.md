@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: My Goals as of 2016
 
@@ -6,7 +6,7 @@ Date: 2016-9-8
 
 Author: Tyler
 
-\-\--
+---
 
 ###### **BE A BETTER FRONT END WEB DEVELOPER**
 

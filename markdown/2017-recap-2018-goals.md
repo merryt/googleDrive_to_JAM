@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: 2017 RECAP, 2018 GOALS
 
@@ -6,7 +6,7 @@ Date: 2018-3-11
 
 Author: Tyler
 
-\-\--
+---
 
 Every year I try to document out what I am trying to accomplish the next
 year. As one might expect I don\'t always get my goals, but it\'s nice

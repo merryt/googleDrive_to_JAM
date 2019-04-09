@@ -1,11 +1,11 @@
-\-\--
+---
 
 Title: WHY HEARTHSTONE HAS THE STAYING POWER TO KEEP UP WITH BLIZZARD'S
 BEHEMOTHS
 
 Date: 2015-5-20
 
-\-\--
+---
 
 For those of you who don't know Hearthstone is the latest game from the
 massive company Blizzard. Blizzard has done what very few companies have

@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: UX INTERVIEW QUESTIONS
 
@@ -6,7 +6,7 @@ Date: 2017-12-10
 
 Author: Tyler
 
-\-\--
+---
 
 Over the years I have been apart of several interview teams, and have
 been interviewed several times for new jobs. I realized pretty quick

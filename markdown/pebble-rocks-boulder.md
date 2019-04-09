@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: PEBBLE ROCKS BOULDER
 
@@ -6,7 +6,7 @@ Date: 2015-9-5
 
 Author: Tyler
 
-\-\--
+---
 
 The first night of the pebble hackathon comes to an end. Viget and
 pebble are hosing a great event with tons of food, free swag, and really

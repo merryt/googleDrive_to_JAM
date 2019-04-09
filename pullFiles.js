@@ -113,6 +113,7 @@ function grabFiles(auth){
             })
             promises.push(promise)
         });
+        // if we are really concerned about speed we could start converting the file to MD and regexing before all are finished
         Promise.all(promises)
                .then(() => convertToMarkdown(files))
                .catch((e) => console.error('crap, not everything finished downloading or something... idk'));
@@ -121,14 +122,15 @@ function grabFiles(auth){
 
 
 function convertToMarkdown(files){
-    console.log(files)
     files.forEach((file)=>{
         let src = file.slugifiedFileName;
-        let slugifiedName = slugify(file.name)
-        args = ['-f','docx','-t','markdown','-o',`./markdown/${slugifiedName}.md`];
+        const slugifiedName = slugify(file.name)
+        const markdownFileName = `./markdown/${slugifiedName}.md`
+        args = ['-f','docx','-t','markdown','-o', `./markdown/${slugifiedName}.md`];
         const callback = (err, result)=> {
-
             if (err) console.error('Oh Nos: ',err)
+
+            secondpassMDEdit(markdownFileName)
             return console.log(result), result
         }
 
@@ -137,6 +139,19 @@ function convertToMarkdown(files){
     })
 
 }
+
+function secondpassMDEdit(markdownFileName){
+    fs.readFile(markdownFileName, 'utf8', function (err,data) {
+        if (err) {return console.log(err);}
+
+        var result = data.replace(/\\-\\--/g, '---');
+
+        fs.writeFile(markdownFileName, result, 'utf8', function (err) {
+            if (err) return console.log(err);
+        });
+    });
+}
+
 
 function slugify(text){
     return text.toString().toLowerCase()

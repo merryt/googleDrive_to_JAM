@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: BOOKS I READ IN 2014!
 
@@ -6,7 +6,7 @@ Date: 2015-3-10
 
 Author: Tyler
 
-\-\--
+---
 
 **Turn the Ship Around!: A True Story of Turning Followers into
 Leaders** --- Written by: L. David Marquet --- This book is the story of

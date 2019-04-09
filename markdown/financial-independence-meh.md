@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: FINANCIAL INDEPENDENCE\... MEH
 
@@ -6,7 +6,7 @@ Date: 2016-2-2
 
 Author: Tyler
 
-\-\--
+---
 
 For the past three years I have focused the majority of my energy onto
 the goal of achieving financial independence as quickly as possible.

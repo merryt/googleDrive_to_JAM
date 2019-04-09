@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: CREATIVE CONNECT SUMMIT
 
@@ -6,7 +6,7 @@ Date: 2015-11-7
 
 Author: Tyler
 
-\-\--
+---
 
 I was part of a panel on the topic of education at the high school
 level. I am not necessarily the most knowledgable on the topic, but I do

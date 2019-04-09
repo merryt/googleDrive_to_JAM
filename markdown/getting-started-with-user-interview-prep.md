@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: GETTING STARTED WITH USER INTERVIEW PREP
 
@@ -6,7 +6,7 @@ Date: 2016-2-15
 
 Author: Tyler
 
-\-\--
+---
 
 > *We can discern plenty of valuable information about a customer from
 > this data, based on what they do and when they do it. That data,

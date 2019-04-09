@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: WHAT I LEARNED AT AEA
 
@@ -6,7 +6,7 @@ Date: 2015-12-29
 
 Author: Tyler
 
-\-\--
+---
 
 -   Performance isn\'t a bolt on addition, its user experience, and it
     > needs to be thought about from the begining

@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: BOOKS I READ IN 2017
 
@@ -6,7 +6,7 @@ Date: 2018-3-3
 
 Author: Tyler
 
-\-\--
+---
 
 **Debt: The First 5,000 Years** - A summary of the history of debt, and
 how it has helped form a modern society. I loved their hypothesis that

@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: WORK FOR FREE BUT NEVER WORK FOR CHEAP.
 
@@ -6,7 +6,7 @@ Date: 2015-5-20
 
 Author: Tyler
 
-\-\--
+---
 
 Days are gone where getting A's in your collegiate classes would ensure
 your smooth transitions from school to a great job. These days employers

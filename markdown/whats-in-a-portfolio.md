@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: WHATS IN A PORTFOLIO?
 
@@ -6,7 +6,7 @@ Date: 2016-3-26
 
 Author: Tyler
 
-\-\--
+---
 
 I received a question today that reads:
 

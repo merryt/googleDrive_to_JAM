@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: LEAVING GOOD IN SEARCH FOR GREAT.
 
@@ -6,7 +6,7 @@ Date: 2016-3-14
 
 Author: Tyler
 
-\-\--
+---
 
 I was living a dream situation, I was working with my friends, getting
 paid more than I ever had, and building something I felt had value. On

@@ -1,4 +1,4 @@
-\-\--
+---
 
 Title: CLIMB YOUR OWN LADDER
 
@@ -6,7 +6,7 @@ Date: 2015-9-23
 
 Author: Tyler
 
-\-\--
+---
 
 In life, everyone is climbing their own respective ladder, because you
 are constantly focused on climbing all you do is see the people above
