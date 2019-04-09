@@ -5,12 +5,10 @@ the goal of this experiment is to take google drive items and convert them to a 
 
 ## To rip files from Google Drive:
 - Go to google drive API and generate your credentials.json and save them to getDataFromDrive
-- navigate to getDataFromDrive.
-- change your target folder in pull_posts.py to something in your personal google drive.
-- if this is your first time create a virtualenv and pip install requirements
-- run pull_posts.py xxx (where xxx is your folder... Tymerrycom is `1_UDXKIeaBFulIxV9EEdRCZqcstiOrkZU`)
--
-This will create a new folder in the projects root called markdown... we will need this later
+- Setup your config.json to include your target folder
+- If this is your first time  pip install requirements and download [pandoc](http://pandoc.org/installing.html)
+- ``yarn pullfiles` will pull down all the files from your config.json
+This will create new folders in the projects root called markdown and docx, which we use for vuepress
 
 
 ## to run vuepress server
