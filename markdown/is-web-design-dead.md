@@ -1,11 +1,7 @@
 ---
-
-Title: **IS WEB DESIGN DEAD?**
-
+Title: IS WEB DESIGN DEAD?
 Date: 2015-6-30
-
 Author: Tyler
-
 ---
 
 There is a new product that has slowly been gaining traffic called [[the

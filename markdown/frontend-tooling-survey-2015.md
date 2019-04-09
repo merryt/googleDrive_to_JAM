@@ -1,11 +1,7 @@
 ---
-
-Title: **[FRONTEND TOOLING SURVEY 2015]{.underline}**
-
+Title: FRONTEND TOOLING SURVEY 2015
 Date: 2015-9-16
-
 Author: Tyler
-
 ---
 
 Earlier this month a [[survey was built by Ashley
