@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.a40cd8b1.css" as="style"><link rel="preload" href="/assets/js/app.7430119d.js" as="script"><link rel="preload" href="/assets/js/25.8d05231f.js" as="script"><link rel="prefetch" href="/assets/js/10.d8034afe.js"><link rel="prefetch" href="/assets/js/11.a2cca3ad.js"><link rel="prefetch" href="/assets/js/12.1fa98ea7.js"><link rel="prefetch" href="/assets/js/13.22429314.js"><link rel="prefetch" href="/assets/js/14.f096367b.js"><link rel="prefetch" href="/assets/js/15.95ad47b3.js"><link rel="prefetch" href="/assets/js/16.e778a0b9.js"><link rel="prefetch" href="/assets/js/17.e3c15bfd.js"><link rel="prefetch" href="/assets/js/18.9977483e.js"><link rel="prefetch" href="/assets/js/19.8604e374.js"><link rel="prefetch" href="/assets/js/2.f7e69724.js"><link rel="prefetch" href="/assets/js/20.f1fa3272.js"><link rel="prefetch" href="/assets/js/21.d3056dee.js"><link rel="prefetch" href="/assets/js/22.040b834e.js"><link rel="prefetch" href="/assets/js/23.a905e31b.js"><link rel="prefetch" href="/assets/js/24.3e5caef2.js"><link rel="prefetch" href="/assets/js/26.db0be9c9.js"><link rel="prefetch" href="/assets/js/27.1f6fecf6.js"><link rel="prefetch" href="/assets/js/28.7c86920f.js"><link rel="prefetch" href="/assets/js/29.cfb7a405.js"><link rel="prefetch" href="/assets/js/3.d002f32a.js"><link rel="prefetch" href="/assets/js/30.114c5ff3.js"><link rel="prefetch" href="/assets/js/31.0020bbf2.js"><link rel="prefetch" href="/assets/js/32.3abc28f0.js"><link rel="prefetch" href="/assets/js/33.d931ff1f.js"><link rel="prefetch" href="/assets/js/34.54e3b98e.js"><link rel="prefetch" href="/assets/js/35.e711c3d3.js"><link rel="prefetch" href="/assets/js/36.147c7917.js"><link rel="prefetch" href="/assets/js/4.582fb8a3.js"><link rel="prefetch" href="/assets/js/5.f4f71278.js"><link rel="prefetch" href="/assets/js/6.8bf41b28.js"><link rel="prefetch" href="/assets/js/7.155bc031.js"><link rel="prefetch" href="/assets/js/8.877d9e53.js"><link rel="prefetch" href="/assets/js/9.aaac49c8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a40cd8b1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><nav class="navbar"><div class="logo">Drive to JAM</div> <div class="nav-items"><a href="/" class="nav-item">Home</a> <a href="#" class="nav-item">Synergy</a> <a href="#" class="nav-item">About</a></div></nav> <div class="main-content"><div class="bio-line"><div class="author"><div class="author-img"></div>
+  Tyler Merry
+</div>
+    Published on: 2017-1-3
+  </div> <div class="content"><p>The goal of this project it to:</p> <ol><li><p>Practice math</p></li> <li><p>Build a prime Siev</p></li> <li><p>Entertain me on an airplane</p></li></ol> <p>First thing we need to do is build an empty array with a bunch of space.
+We will be checking prime numbers up to this point.</p> <p>var arrbucket = new Array(1000);</p> <p>After we have that empty array we need to set every value to false,</p> <p>for(var i = 0; i &lt; arrbucket.length; i ++){</p> <p>arrbucket[i] = false;</p> <p>}</p> <p>We then create an array called <em>primes</em> and populate it with the number
+1 as our first prime. We then cycle through the arrbucket checking to
+see if that value is true of false, if its still false we know its
+prime. So as a prime number we push it to the array of primes. After we
+have it added to the array of primes we cycle through the bucket
+flipping every multiple of that number to true. For more information
+about the math behind this check out [the wiki page]{.underline}</p> <p>var primes = [1]</p> <p>for(var i = 2; i &lt; arrbucket.length; i++){</p> <p>if(!arrbucket[i]){</p> <p>primes.push(i)</p> <p>for(var a = i; a &lt; arrbucket.length; a = a + i){</p> <p>arrbucket[a] = true</p> <p>}</p> <p>}</p> <p>}</p> <p>We also need a helper function that checks to see if a item exists in an
+array.</p> <p>var contains = function(n, arr){</p> <p>for(var i = 0; i &lt; arr.length; i++){</p> <p>if(n === arr[i]){</p> <p>return true;</p> <p>}</p> <p>}</p> <p>return false;</p> <p>}</p> <p>Finally my favorite part, a function that checks to see if a number is
+prime.</p> <p>isPrime = function(n){</p> <p>if(contains(n, primes)){</p> <p>return true;</p> <p>}else{</p> <p>return false;</p> <p>}</p> <p>}</p> <p>All togeather it looks like this:</p> <p>var arrbucket = new Array(1000);</p> <p>for(var i = 0; i &lt; arrbucket.length; i ++){</p> <p>arrbucket[i] = false;</p> <p>}</p> <p>var primes = [1]</p> <p>for(var i = 2; i &lt; arrbucket.length; i++){</p> <p>if(!arrbucket[i]){</p> <p>primes.push(i)</p> <p>for(var a = i; a &lt; arrbucket.length; a = a + i){</p> <p>arrbucket[a] = true</p> <p>}</p> <p>}</p> <p>}</p> <p>var contains = function(n, arr){</p> <p>for(var i = 0; i &lt; arr.length; i++){</p> <p>if(n === arr[i]){</p> <p>return true;</p> <p>}</p> <p>}</p> <p>return false;</p> <p>}</p> <p>isPrime = function(n){</p> <p>if(contains(n, primes)){</p> <p>return true;</p> <p>}else{</p> <p>return false;</p> <p>}</p> <p>}</p></div></div></div></div>
+    <script src="/assets/js/app.7430119d.js" defer></script><script src="/assets/js/25.8d05231f.js" defer></script>
+  </body>
+</html>

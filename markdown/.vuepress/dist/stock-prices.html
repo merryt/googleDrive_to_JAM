@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.a40cd8b1.css" as="style"><link rel="preload" href="/assets/js/app.7430119d.js" as="script"><link rel="preload" href="/assets/js/26.db0be9c9.js" as="script"><link rel="prefetch" href="/assets/js/10.d8034afe.js"><link rel="prefetch" href="/assets/js/11.a2cca3ad.js"><link rel="prefetch" href="/assets/js/12.1fa98ea7.js"><link rel="prefetch" href="/assets/js/13.22429314.js"><link rel="prefetch" href="/assets/js/14.f096367b.js"><link rel="prefetch" href="/assets/js/15.95ad47b3.js"><link rel="prefetch" href="/assets/js/16.e778a0b9.js"><link rel="prefetch" href="/assets/js/17.e3c15bfd.js"><link rel="prefetch" href="/assets/js/18.9977483e.js"><link rel="prefetch" href="/assets/js/19.8604e374.js"><link rel="prefetch" href="/assets/js/2.f7e69724.js"><link rel="prefetch" href="/assets/js/20.f1fa3272.js"><link rel="prefetch" href="/assets/js/21.d3056dee.js"><link rel="prefetch" href="/assets/js/22.040b834e.js"><link rel="prefetch" href="/assets/js/23.a905e31b.js"><link rel="prefetch" href="/assets/js/24.3e5caef2.js"><link rel="prefetch" href="/assets/js/25.8d05231f.js"><link rel="prefetch" href="/assets/js/27.1f6fecf6.js"><link rel="prefetch" href="/assets/js/28.7c86920f.js"><link rel="prefetch" href="/assets/js/29.cfb7a405.js"><link rel="prefetch" href="/assets/js/3.d002f32a.js"><link rel="prefetch" href="/assets/js/30.114c5ff3.js"><link rel="prefetch" href="/assets/js/31.0020bbf2.js"><link rel="prefetch" href="/assets/js/32.3abc28f0.js"><link rel="prefetch" href="/assets/js/33.d931ff1f.js"><link rel="prefetch" href="/assets/js/34.54e3b98e.js"><link rel="prefetch" href="/assets/js/35.e711c3d3.js"><link rel="prefetch" href="/assets/js/36.147c7917.js"><link rel="prefetch" href="/assets/js/4.582fb8a3.js"><link rel="prefetch" href="/assets/js/5.f4f71278.js"><link rel="prefetch" href="/assets/js/6.8bf41b28.js"><link rel="prefetch" href="/assets/js/7.155bc031.js"><link rel="prefetch" href="/assets/js/8.877d9e53.js"><link rel="prefetch" href="/assets/js/9.aaac49c8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a40cd8b1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><nav class="navbar"><div class="logo">Drive to JAM</div> <div class="nav-items"><a href="/" class="nav-item">Home</a> <a href="#" class="nav-item">Synergy</a> <a href="#" class="nav-item">About</a></div></nav> <div class="main-content"><div class="bio-line"><div class="author"><div class="author-img"></div>
+  Tyler Merry
+</div>
+    Published on: 2016-11-3
+  </div> <div class="content"><p>You are handed a Back To The Future 2 style book. Instead of the almanac
+though, its tomorrows stock results. For this exercise we are going to
+work out a way to figure out how to maximize our returns on the
+following</p> <p>// Starting Code</p> <p>stockPricesYesterday = [10, 7, 5, 8, 11, 9]</p> <p>getMaxProfit(stockPricesYesterday)</p> <p>The first version of this code could be something super simple like:</p> <p>// works here...</p> <p>var getMaxProfit = function(stockPricesYesterday){</p> <p>return Math.max(...stockPricesYesterday) -
+Math.min(...stockPricesYesterday)</p> <p>}</p> <p>var stockPricesYesterday = [10, 7, 5, 8, 11, 9];</p> <p>getMaxProfit(stockPricesYesterday)</p> <p>This of course doesn't solve the problem every time, but it does
+introduce a cool tool we have, the spread operator. The spread operator
+... is a way to expand an array or object and pass in each part as a
+separate item. Our getMaxProfit function is pretty easy to understand,
+it takes the largest number of the day, and subtracts the smallest
+number from it. In out next example we will be address what to do if the
+largest number comes BEFORE the smallest number, and there for making it
+impossible to sell at the highest price, or buy at the lowest.</p></div></div></div></div>
+    <script src="/assets/js/app.7430119d.js" defer></script><script src="/assets/js/26.db0be9c9.js" defer></script>
+  </body>
+</html>
