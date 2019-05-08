@@ -1,6 +1,6 @@
 <template>
-  <div class="theme-container">
-    <Navbar/>
+  <div class="theme-container" >
+    <Navbar :position="position[1]" :page="layout" />
     <component class="main-content" :is="layout"></component>
   </div>
 </template>
@@ -8,11 +8,16 @@
 <style lang="stylus">
 html, body
   padding 0
-  margin 1em 5em 10em 5em
+  margin 0
+  background-color #f4f8fb
+  -ms-text-size-adjust 100%
+  -webkit-text-size-adjust 100%
 
 body
   font-family -apple-system, "Droid Sans", sans-serif
   font-size 16px
+  text-rendering optimizeLegibility
+  -webkit-font-smoothing antialiased
 
 strong
   font-weight 600
@@ -35,12 +40,14 @@ p, ul, ol
 </style>
 
 <script>
- import Navbar from './components/Navbar.vue'
  import Home from './layouts/Home.vue'
  import Post from './layouts/Post.vue'
+ import Navbar from './components/Navbar.vue'
+ import windowScrollPosition from './mixins/windowScrollPosition.js';
 
  export default{
-     components: { Navbar, Home, Post },
+     components: {Home, Post, Navbar },
+     mixins: [windowScrollPosition('position')],
      computed: {
          layout(){
              const{path} = this.$page

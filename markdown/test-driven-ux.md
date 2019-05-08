@@ -1,10 +1,8 @@
 ---
-
 Title: Test Driven UX
-
 Date: 2019-4-5
-
 Author: Tyler
+Description: Test driven development has been around for ever, lets give UX a chance to shine!
 
 ---
 

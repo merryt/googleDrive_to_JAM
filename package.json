@@ -11,5 +11,9 @@
     "googleapis": "^27.0.0",
     "node-pandoc": "^0.3.0",
     "vuepress": "0.14.10"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0"
   }
 }
