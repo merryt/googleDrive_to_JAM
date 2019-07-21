@@ -1,6 +1,6 @@
 ---
 
-Title: **[FRONTEND TOOLING SURVEY 2015]{.underline}**
+Title: Frontend tooling survey 2015
 
 Date: 2015-9-16
 

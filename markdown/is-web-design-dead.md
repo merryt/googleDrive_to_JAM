@@ -1,6 +1,6 @@
 ---
 
-Title: **IS WEB DESIGN DEAD?**
+Title: IS WEB DESIGN DEAD?
 
 Date: 2015-6-30
 
