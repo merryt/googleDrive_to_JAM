@@ -1,6 +1,6 @@
 ---
 
-Title: WORK FOR FREE BUT NEVER WORK FOR CHEAP.
+Title: Work for free but never work for cheap.
 
 Date: 2015-5-20
 

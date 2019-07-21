@@ -6,6 +6,8 @@
 </template>
 
 <style lang="stylus">
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swa');
+
 html, body
   padding 0
   margin 0
@@ -14,7 +16,7 @@ html, body
   -webkit-text-size-adjust 100%
 
 body
-  font-family -apple-system, "Droid Sans", sans-serif
+  font-family "Source Sans Pro",Helvetica,sans-serif
   font-size 16px
   text-rendering optimizeLegibility
   -webkit-font-smoothing antialiased
@@ -25,12 +27,8 @@ strong
 h1, h2, h3, h4, h5, h6
   font-weight 600
   line-height 1.25
+  font-family "Source Sans Pro",Helvetica,sans-serif
 
-h1
-  color: #231F20
-
-h2
-  color: #BB4430
 
 a
   color: #7EBDC2

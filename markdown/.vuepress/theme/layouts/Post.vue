@@ -2,9 +2,10 @@
   <div class="article-page">
 
     <div class="article-date">{{date}}</div>
+
     <h1>{{title}}</h1>
     <Content :custom="false"/>
-    <div class="bio-line">
+    <div class="bio-line content">
       <Author />
     </div>
   </div>
@@ -96,5 +97,9 @@ import Navbar from '../components/Navbar.vue';
      line-height: 14px;
      max-width: 800px;
      color: #3c484e;
+ }
+ ul > li > p{
+   line-height: 1em;
+   margin: 0;
  }
 </style>

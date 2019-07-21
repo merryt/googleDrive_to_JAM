@@ -8,62 +8,58 @@ Author: Tyler
 
 ---
 
-###### **BE A BETTER FRONT END WEB DEVELOPER**
+### BE A BETTER FRONT END WEB DEVELOPER
 
 -   Give 1 talk per year on front-end development
 
--   Create enough bugs that I know why I am messing up, don\'t create
-    > those bugs in the future
+-   Create enough bugs that I know why I am messing up, don\'t create those bugs in the future
 
 -   (how do I quantify this)?
 
-###### **BE A BETTER DESIGNER**
+### BE A BETTER DESIGNER
 
 -   (how do I quantify this)?
 
-###### **BE A GOOD BOYFRIEND**
+### BE A GOOD BOYFRIEND
 
 -   Remain calm in frustrating situations.
 
 -   (how do I quantify this)?
 
-###### **BE A GOOD FRIEND**
+### BE A GOOD FRIEND
 
 -   Have an above 90% consistency rating of helping friends in need.
 
-###### **LEARN SPANISH**
+### LEARN SPANISH
 
 -   Be able to say over 100 phrases
 
-###### **BECOME STRONG**
+### BECOME STRONG
 
 -   be able to rep 135 on the bench 10x
 
 -   be able to do 10 pull-ups
 
-###### **BE HEALTHY**
+### BE HEALTHY
 
--   1.5 hours of any kind of life style activity per day this includes
-    > walking)
+-   1.5 hours of any kind of lifestyle activity per day
 
-###### **MAKE THINGS(BOTH DIGITAL AND NOT)**
+### MAKE THINGS(BOTH DIGITAL AND NOT)
 
 -   (how do I quantify this)?
 
-###### **BE MINIMALISTIC**
+### BE MINIMALISTIC
 
 -   Travel with less 20lbs of stuff
 
 -   (how do I quantify this)?
 
-###### **LEARN CONTENTMENT**
+### LEARN CONTENTMENT
 
 -   (how do I quantify this)?
 
-###### **BECOME FINANCIALLY INDEPENDENT**
+### BECOME FINANCIALLY INDEPENDENT
 
--   Have 30 times my annual spending saved (currently have two times
-    > saved) (still only have 2x because I got an expensive house on a
-    > 15 year morgage)
+-   Have 30 times my annual spending saved (currently have two times saved) (still only have 2x because I got an expensive house on a 15 year morgage)
 
 -   Be able to pursue life goals with out being motivated by money.

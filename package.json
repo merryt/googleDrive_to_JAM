@@ -8,9 +8,10 @@
   "dependencies": {
     "async": "^2.6.2",
     "config.json": "0.0.4",
-    "googleapis": "^27.0.0",
+    "dev-dependencies": "^1.0.0",
+    "googleapis": "^41.0.1",
     "node-pandoc": "^0.3.0",
-    "vuepress": "0.14.10"
+    "vuepress": "^1.0.2"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",
