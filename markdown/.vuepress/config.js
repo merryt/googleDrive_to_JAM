@@ -1,4 +1,5 @@
 module.exports = {
+  title: "Tyler Merry",
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -7,3 +8,4 @@ module.exports = {
     ]
   }
 }
+blay

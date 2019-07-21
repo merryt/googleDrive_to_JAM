@@ -1,6 +1,6 @@
 ---
 
-Title: 2016 RECAP, 2017 GOALS
+Title: 2016 Recap, 2017 Goals
 
 Date: 2016-12-27
 
@@ -8,98 +8,74 @@ Author: Tyler
 
 ---
 
-### **2016 ACCOMPLISHMENTS**
+2016 ACCOMPLISHMENTS
+--------------------
 
-My 2016 goals should ideally follow my [[life
-goals]{.underline}](http://tymerry.com/my-top-10-priorities/).
+My 2016 goals should ideally follow my [life goals](http://tymerry.com/my-top-10-priorities/).
 
-###### **CAREER**
+### CAREER
 
 -   Front-end developer
 
--   Technical reviewed a book on [React]{.underline}
+-   Technical reviewed a book on [React]
 
--   Reviewed portfolios for the front-end developer program with turing
-    > and offered to be a mentor. I also gave a talk here.
-    > [slides]{.underline}
+-   Reviewed portfolios for the front-end developer program with turing and offered to be a mentor. I also gave a talk here. [slides]
 
 -   Got SAFe Certified
 
 -   Designer
 
--   Continued co-hosting [[Denver
-    > UX]{.underline}](http://denveruxers.com/). We have gone 12 months,
-    > spun up a newsletter and slack channel. Both can be accessed from
-    > the [[Website]{.underline}](http://denveruxers.com/).
+-   Continued co-hosting [Denver UX](http://denveruxers.com/). We have gone 12 months, spun up a newsletter and slack channel. Both can be accessed from the [Website](http://denveruxers.com/).
 
--   Gave two talks with general assembly and reviewed portfolios for
-    > their UX program. [[Design
-    > Thinking]{.underline}](https://dl.dropboxusercontent.com/u/9595214/talks/GA%20TK%20Design%20Thinking%20and%20Rapid%20Prototyping.pdf)
-    > [[Mobile UX
-    > Fundamentals]{.underline}](https://dl.dropboxusercontent.com/u/9595214/talks/MobileUXFundamentals.key).
-    > I also spoke on a few panels about finding a job in Denver, and
-    > the state of the UX community.
+-   Gave two talks with general assembly and reviewed portfolios for their UX program. [Design Thinking](https://dl.dropboxusercontent.com/u/9595214/talks/GA%20TK%20Design%20Thinking%20and%20Rapid%20Prototyping.pdf) [Mobile UX Fundamentals](https://dl.dropboxusercontent.com/u/9595214/talks/MobileUXFundamentals.key). I also spoke on a few panels about finding a job in Denver, and the state of the UX community.
 
--   Gave talk on Sketching a couple times
-    > [[slides]{.underline}](https://dl.dropboxusercontent.com/u/9595214/talks/Sketching.key).
-    > One time was for a gSchool class
+-   Gave talk on Sketching a couple times [slides](https://dl.dropboxusercontent.com/u/9595214/talks/Sketching.key). One time was for a gSchool class
 
--   Worked with Denver library, and Denver public schools to mentor and
-    > teach classes on UX and development.
+-   Worked with Denver library, and Denver public schools to mentor and teach classes on UX and development.
 
 -   Did portfolio reviews with CodeCraft
 
--   Gave a talk with Denver Workforce Development [slides]{.underline}
+-   Gave a talk with Denver Workforce Development [slides]
 
-###### **PERSONAL**
+### PERSONAL
 
 -   Boyfriend
 
 -   Got engaged
 
--   Randi claims I get a 3.7 for remain calm in frustrating
-    > situations\... hehe
+-   Randi claims I get a 3.7 for remain calm in frustrating situations\... hehe
 
 -   Friend
 
--   I helped someone move, but this year I seemed to help my friends
-    > more by picking them up from the airport.
+-   I helped someone move, but this year I seemed to help my friends more by picking them up from the airport.
 
 -   Spanish
 
--   Still chugging along, need to set some more quantifyable short term
-    > goals for this.
+-   Still chugging along, need to set some more quantifyable short term goals for this.
 
 -   Strength
 
 -   Healthy
 
--   Hiked and ran a fair amount, for the times I rememberd to turn on
-    > strava you can check out my data [here]{.underline}
+-   Hiked and ran a fair amount, for the times I rememberd to turn on strava you can check out my data [here]
 
--   Bierstat, quandy, huron holycross. Also [hiked and biked CO Trail
-    > section 7]{.underline}
+-   Bierstat, quandy, huron holycross. Also [hiked and biked CO Trail section 7]
 
 -   Minimalism
 
 -   My Bonzi tree died
 
--   I tried to pack light but as always [[could have done
-    > better]{.underline}](http://tymerry.com/packing-light/). I am sure
-    > I can do lighter.
+-   I tried to pack light but as always [could have done better](http://tymerry.com/packing-light/). I am sure I can do lighter.
 
 -   Contentment
 
--   I guess I need to figure out how to quantify this. I feel like I did
-    > pretty good, but like most things I could do better.
+-   I guess I need to figure out how to quantify this. I feel like I did pretty good, but like most things I could do better.
 
-###### **FINANCIAL**
+### FINANCIAL
 
 -   Saving
 
--   Managed to save a significant portion of my income which will
-    > hopefully lead to [[early
-    > retirement]{.underline}](http://www.mrmoneymustache.com/2012/01/13/the-shockingly-simple-math-behind-early-retirement/).
+-   Managed to save a significant portion of my income which will hopefully lead to [early retirement](http://www.mrmoneymustache.com/2012/01/13/the-shockingly-simple-math-behind-early-retirement/).
 
 -   Earning
 
@@ -107,7 +83,8 @@ goals]{.underline}](http://tymerry.com/my-top-10-priorities/).
 
 -   Got a raise
 
-### **2017 GOALS**
+2017 GOALS
+----------
 
 -   Update ghost blog to latest version
 

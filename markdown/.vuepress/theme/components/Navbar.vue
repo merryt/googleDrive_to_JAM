@@ -1,9 +1,15 @@
 <template>
   <nav class="navbar" :style="{backgroundColor: 'rgba(12,12,12,' + bgOpacity + ')' }">
-    <div class="logo"><a href="/">Drive To Jam </a></div>
+    <div class="logo"><a href="/">Tyler Merry</a></div>
     <div class="nav-items">
-      <a href="/" class="nav-item">About<span class="nav--comment">(generic white guys)</span></a>
-      <a href="#" class="nav-item">Other Projects <span class="nav--comment">(dribbble/github bs)</span></a>
+      <a href="/my-design-process.html" class="nav-item">Design Process</a>
+      <a href="https://github.com/merryt" class="nav-item">Code</a>
+      <a href="https://www.behance.net/merryt" class="nav-item">Portfolio</a>
+      <a href="https://dribbble.com/tymerry" class="nav-item">Dribbble</a>
+      <a href="https://www.linkedin.com/in/merryt" class="nav-item">LinkedIn</a>
+      <a href="/about.html" class="nav-item">About</a>
+
+
     </div>
 
   </nav>
@@ -68,6 +74,7 @@
      text-transform:none;
      font-weight: 100;
  }
+
 
 
 </style>

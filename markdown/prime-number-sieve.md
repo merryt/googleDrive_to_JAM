@@ -16,8 +16,7 @@ The goal of this project it to:
 
 3.  Entertain me on an airplane
 
-First thing we need to do is build an empty array with a bunch of space.
-We will be checking prime numbers up to this point.
+First thing we need to do is build an empty array with a bunch of space. We will be checking prime numbers up to this point.
 
 var arrbucket = new Array(1000);
 
@@ -29,13 +28,7 @@ arrbucket\[i\] = false;
 
 }
 
-We then create an array called *primes* and populate it with the number
-1 as our first prime. We then cycle through the arrbucket checking to
-see if that value is true of false, if its still false we know its
-prime. So as a prime number we push it to the array of primes. After we
-have it added to the array of primes we cycle through the bucket
-flipping every multiple of that number to true. For more information
-about the math behind this check out [the wiki page]{.underline}
+We then create an array called *primes* and populate it with the number 1 as our first prime. We then cycle through the arrbucket checking to see if that value is true of false, if its still false we know its prime. So as a prime number we push it to the array of primes. After we have it added to the array of primes we cycle through the bucket flipping every multiple of that number to true. For more information about the math behind this check out [the wiki page]
 
 var primes = \[1\]
 
@@ -55,8 +48,7 @@ arrbucket\[a\] = true
 
 }
 
-We also need a helper function that checks to see if a item exists in an
-array.
+We also need a helper function that checks to see if a item exists in an array.
 
 var contains = function(n, arr){
 
@@ -74,8 +66,7 @@ return false;
 
 }
 
-Finally my favorite part, a function that checks to see if a number is
-prime.
+Finally my favorite part, a function that checks to see if a number is prime.
 
 isPrime = function(n){
 

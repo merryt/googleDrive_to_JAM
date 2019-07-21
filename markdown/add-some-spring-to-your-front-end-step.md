@@ -8,7 +8,7 @@ Date: 2015-12-16
 
 Talk is:
 
-[https://www.youtube.com/watch?v=FEs2jgZBaQA]{.underline}
+[https://www.youtube.com/watch?v=FEs2jgZBaQA]
 
 Page performance is like black magic
 
@@ -24,7 +24,7 @@ To fix:
 
 -   Text your site
 
-    -   [http://www.webpagetest.org/]{.underline}
+    -   [http://www.webpagetest.org/]
 
     -   Google PageSpeed Insights
 
@@ -48,8 +48,7 @@ To fix:
 
     -   Bootstrap can be over kill! Most people
 
-    -   Most projects I am on that use bootstrap have \~85% unused or
-        > overwritten bootstrap code
+    -   Most projects I am on that use bootstrap have \~85% unused or overwritten bootstrap code
 
 -   UnCSS
 
@@ -67,9 +66,7 @@ To fix:
 
     -   helpfull for end to end testing
 
-    -   Tools- Will show visual percentage changed, useful during
-        > optimization stages to make sure you didn't blow up all your
-        > stuff
+    -   Tools- Will show visual percentage changed, useful during optimization stages to make sure you didn't blow up all your stuff
 
         -   PhantomJS --- Scriptable headless browser
 

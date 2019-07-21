@@ -5,7 +5,7 @@ const config = require('config.json')('./config.json');
 const nodePandoc = require('node-pandoc');
 
 // If modifying these scopes, delete token.json.
-const SCOPES = ['https://www.googleapis.com/auth/documents.readonly', 'https://www.googleapis.com/auth/drive.readonly'];
+const SCOPES = ['https://www.googleapis.com/auth/documents.readonly', 'https://www.googleapis.com/auth/drive'];
 // The file token.json stores the user's access and refresh tokens, and is
 // created automatically when the authorization flow completes for the first
 // time.
@@ -63,7 +63,7 @@ function listFiles(auth) {
         const drive = google.drive({version: 'v3', auth});
         return drive.files.list({
             pageSize: 50,
-            q: `'${config.publishedFolderID}' in parents`,
+            q: `'${config.publishingFolderID}' in parents`,
             fields: 'nextPageToken, files(id, name)',
         }, (err, res) => {
             if (err) return console.log('The API returned an error: ' + err);
@@ -82,6 +82,38 @@ function writeStream(slugifiedFileName){
     const filePath = slugifiedFileName;
     return fs.createWriteStream(filePath, {
         encoding: 'utf-8'
+    });
+}
+
+
+function moveFile(fileId, targetDirectory, drive){
+    /// moves a file from its current location to a given directory.
+    /// taskes file id, the directory you are moving it to, and an authenticated drive instance
+
+
+    drive.files.get({
+        fileId: fileId,
+        fields: 'parents'
+    }, function (err, file) {
+        if (err) {
+            // Handle error
+            console.error(err);
+        } else {
+            // Move the file to the new folder
+            var previousParents = file.data.parents.join(',');
+            drive.files.update({
+                fileId: fileId,
+                addParents: targetDirectory,
+                removeParents: previousParents,
+                fields: 'id, parents'
+            }, function (err, file) {
+                if (err) {
+                    // Handle error
+                } else {
+                    // File moved.
+                }
+            });
+        }
     });
 }
 
@@ -113,9 +145,13 @@ function grabFiles(auth){
             })
             promises.push(promise)
         });
-        // if we are really concerned about speed we could start converting the file to MD and regexing before all are finished
         Promise.all(promises)
-               .then(() => convertToMarkdown(files))
+               .then(() => {
+                   convertToMarkdown(files)
+                   files.forEach((file,index)=>{
+                       moveFile(file.id, config.publishedFolderID, drive)
+                   })
+               })
                .catch((e) => console.error('crap, not everything finished downloading or something... idk'));
     })
 }
@@ -126,12 +162,11 @@ function convertToMarkdown(files){
         let src = file.slugifiedFileName;
         const slugifiedName = slugify(file.name)
         const markdownFileName = `./markdown/${slugifiedName}.md`
-        args = ['-f','docx','-t','markdown','-o', `./markdown/${slugifiedName}.md`];
+        args = ['-f','docx','-t','markdown+ignore_line_breaks','-o', `./markdown/${slugifiedName}.md`, '--wrap=none'];
         const callback = (err, result)=> {
             if (err) console.error('Oh Nos: ',err)
-
             secondpassMDEdit(markdownFileName)
-            return console.log(result), result
+            return result
         }
 
         // Call pandoc
@@ -146,10 +181,29 @@ function secondpassMDEdit(markdownFileName){
 
         var result = data.replace(/\\-\\--/g, '---');
 
-        fs.writeFile(markdownFileName, result, 'utf8', function (err) {
+        indexOfEndOfFrontmatter = result.indexOf('---', + 1);
+        frontmatter = cleanFrontMatter(result.slice(0, indexOfEndOfFrontmatter + 3));
+        markdownContent = cleanMarkdownContent(result.slice(indexOfEndOfFrontmatter + 3, -1));
+
+        mdData = frontmatter + markdownContent
+        fs.writeFile(markdownFileName, mdData, 'utf8', function (err) {
             if (err) return console.log(err);
         });
     });
+}
+function cleanFrontMatter(frontmatter){
+    frontmatter = frontmatter.replace(/\\/g, "")
+    return frontmatter
+}
+
+function cleanMarkdownContent(mdContant){
+    mdContant = mdContant.replace(/\*\*(.+?)\*\*/g,function(str) { return "**" + str.slice(2,-2).trim() + "**"; })
+    mdContant = mdContant.replace(/(^|\n)\-(.\n?)*/g,function(str) { return str.replace(/^\s*>/gm,"")});
+    mdContant = mdContant.replace(/(^|\n)\d.(.\n?)*/g,function(str) { return str.replace(/^\s*>/gm,"")});
+    mdContant = mdContant.replace(/{\.underline}/g,"");
+    mdContant = mdContant.replace(/\[\[/g,"[");
+    mdContant = mdContant.replace(/\]\]/g,"]");
+    return mdContant
 }
 
 
@@ -161,17 +215,3 @@ function slugify(text){
                .replace(/^-+/, '')             // Trim - from start of text
                .replace(/-+$/, '');            // Trim - from end of text
 }
-
-/* dunder drama we may need again */
-/*
- * def export_docx_file_to_markdown(document):
- *     title = document.get('title')
- *     with open(f"../docx/{slugify(title)}.docx", "rb") as docx_file:
- *         result = mammoth.convert_to_markdown(docx_file)
- *         fixed_md = result.value
- *         fixed_md = re.sub(r"([\w:$-]?)([ \t]*?)__([ \t]*?)([\w:$]+?[\w \t]*?[\w:$,;]+?)([ \t]*?)__([ \t\\-]*?)([\w:$]+?)", r"\1\2\3__\4__\5\6\7", fixed_md)
- *         fixed_md = re.sub(r"([\w:$-]?)([ \t]*?)\*\*([ \t]*?)([\w:$]+?[\w \t]*?[\w:$,;]+?)([ \t]*?)\*\*([ \t\\-]*?)([\w:$]+?)", r"\1\2\3**\4**\5\6\7", fixed_md)
- *         fixed_md = re.sub(r"([\w:$-]?)([ \t]*?)\*([ \t]*?)([\w:$]+?[\w \t]*?[\w:$,;]+?)([ \t]*?)\*([ \t\\-]*?)([\w:$]+?)", r"\1\2\3*\4*\5\6\7", fixed_md)
- *         fixed_md = re.sub(r"\\-\\-\\-", "---", fixed_md)
- *         with open(f"../markdown/{slugify(title)}.md", "w") as file:
- *             file.write(fixed_md) */
