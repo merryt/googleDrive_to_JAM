@@ -13,14 +13,6 @@
 
 </template>
 
-<style>
- .bio-line{
-     display:flex;
-     justify-content: space-between;
- }
-
-</style>
-
 <script>
 import Author from '../components/Author.vue';
 import Navbar from '../components/Navbar.vue';
@@ -67,6 +59,10 @@ import Navbar from '../components/Navbar.vue';
 </script>
 
 <style>
+ .bio-line{
+     display:flex;
+     justify-content: space-between;
+ }
  .article-page{
      padding-top: 100px;
      height: 100%;
@@ -87,7 +83,8 @@ import Navbar from '../components/Navbar.vue';
      color: #336699;
      text-weight: 800
  }
- .content{
+ .content,
+ .content__default{
      position: relative;
      margin: 0 auto;
      padding: 0 100px;
