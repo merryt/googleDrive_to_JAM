@@ -1,5 +1,6 @@
 <template>
   <div class="theme-container" >
+    <meta name="google-site-verification" content="8bkDTzGwYEt1P4NaDKuhxLUJbosgzc0Pz3tPP29wAgE" />
     <script>
      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
