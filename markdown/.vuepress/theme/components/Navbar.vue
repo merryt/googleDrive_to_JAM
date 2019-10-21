@@ -1,15 +1,14 @@
 <template>
-  <nav class="navbar" :style="{backgroundColor: 'rgba(12,12,12,' + bgOpacity + ')' }">
-    <div class="logo"><a href="/">Tyler Merry</a></div>
-    <div class="nav-items">
-      <a href="/my-design-process.html" class="nav-item">Design Process</a>
+  <nav class="navbar"">
+    <div class="logo" v-on:click="menuHidden = !menuHidden"><a>TM</a></div>
+    <div class="nav-items" v-bind:class="{ hide: menuHidden }" v-on:click="menuHidden = !menuHidden" >
+      <a href="/" class="nav-item">Home</a>
+      <a href="/my-design-process.html" class="nav-item">Process</a>
       <a href="https://github.com/merryt" class="nav-item">Code</a>
       <a href="https://www.behance.net/merryt" class="nav-item">Portfolio</a>
       <a href="https://dribbble.com/tymerry" class="nav-item">Dribbble</a>
       <a href="https://www.linkedin.com/in/merryt" class="nav-item">LinkedIn</a>
-      <a href="/about.html" class="nav-item">About</a>
-
-
+      <a href="https://twitter.com/Tyler_Merry" class="nav-item">Twitter</a>
     </div>
 
   </nav>
@@ -17,6 +16,9 @@
 
 <script>
  export default{
+     data:function(){
+         return {menuHidden: true}
+     },
      props: {
          'position': {
              type: Number,
@@ -24,35 +26,36 @@
          },
          'page': {type:String}
      },
-     computed:{
-         bgOpacity(){
-             if(this.page === 'Home'){
-                 return (this.position / 600)
-             }else{
-                 return 1
-             }
-         }
-     }
-
-     }
-
+ }
 </script>
 
 <style>
  nav.navbar{
-     position:fixed;
-     top: 0px;
      z-index: 100;
-     border-bottom: 2px solid #336699;
-     color: #fff;
-     width: 100%;
-     height: 60px;
-     display:flex;
-     padding: 0 10px;
-     box-sizing: border-box;
+     top: 1%;
+     position:fixed;
+ }
+ @media only screen and (min-device-width: 500px){
+     nav.navbar{
+         position: sticky;
+         grid-column: 2;
+         align-self: start;
+         top: 5%;
+     }
+ }
+
+ .logo{
+     background-color: #336699;
+     display: flex;
      align-items: center;
-     justify-content: space-between;
-     background-color: rgba(255,255,255, 0);
+     border-radius: 50%;
+     height: 60px;
+     width: 60px;
+     box-sizing: border-box;
+     justify-content: center;
+     z-index:301;
+     position: absolute;
+     left: 7px;
  }
 
  .logo a{
@@ -60,19 +63,59 @@
      text-decoration: none;
      color: #fff;
      font-size: 25px;
+     font-weight:900;
+
+ }
+
+
+ .nav-items{
+     z-index:300;
+     display: grid;
+     position: fixed;
+     box-sizing:border-box;
+     padding-top: 3%;
+     width: 100%;
+     height: 100%;
+     background: rgba(5, 23, 40, 0.99);;
+     top: 0;
+     left: 0;
+     grid-template-columns: 60px auto 50px;
+     grid-template-rows: 7% 7% 7% 7% 7% 7% 7% 7% auto;
+ }
+ @media only screen and (min-device-width: 500px){
+     .nav-items{
+         grid-template-columns: 5% 70px auto 50px;
+         grid-template-rows: 10% 10% 10% 10% 10% 10% 10% auto;
+     }
  }
 
  .nav-item{
-     color: #fff;
      text-decoration: none;
      margin-left: 10px;
      text-transform: uppercase;
-     font-size: 14px;
      font-weight: 700;
+     grid-column-start: 2;
+     grid-column-end: 3;
+     font-family: 'Merriweather', serif;
+     color: #fff;
+     font-size:3em;
+     transition:all .5s ease-in;
+     border-bottom: 5px solid transparent;
  }
- .nav--comment{
-     text-transform:none;
-     font-weight: 100;
+
+ @media only screen and (min-device-width: 500px){
+     .nav-item{
+         font-size: 100px;
+         grid-column-start: 3;
+         grid-column-end:4;
+     }
+ }
+ .nav-item:hover{
+     border-bottom-color: #fff;
+ }
+
+ .hide{
+     display:none;
  }
 
 

@@ -10,13 +10,14 @@
     "config.json": "0.0.4",
     "dev-dependencies": "^1.0.0",
     "googleapis": "^41.0.1",
-    "node-pandoc": "^0.3.0",
     "vuepress": "^1.0.2"
   },
   "devDependencies": {
+    "axios": ">=0.18.1",
+    "lodash": ">=4.17.13",
+    "node-pandoc": "^0.3.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
-    "lodash": ">=4.17.13",
-    "axios": ">=0.18.1"
+    "vuepress-plugin-autometa": "^0.1.12"
   }
 }

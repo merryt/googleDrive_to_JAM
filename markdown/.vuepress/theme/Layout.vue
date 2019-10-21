@@ -16,36 +16,51 @@
   </div>
 </template>
 
-<style lang="stylus">
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swa');
+<style>
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro:300,400,600,700,900&display=swap');
 
-html, body
-  padding 0
-  margin 0
-  background-color #f4f8fb
-  -ms-text-size-adjust 100%
-  -webkit-text-size-adjust 100%
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #f4f8fb;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
 
-body
-  font-family "Source Sans Pro",Helvetica,sans-serif
-  font-size 16px
-  text-rendering optimizeLegibility
-  -webkit-font-smoothing antialiased
+body{
+    font-family: "Source Sans Pro",Helvetica,sans-serif;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
 
-strong
-  font-weight 600
+ @media only screen and (min-device-width: 500px){
+     .theme-container{
+         display:grid;
+         grid-template-columns: 5% 100px auto calc(5% + 100px);
+     }
+ }
 
-h1, h2, h3, h4, h5, h6
-  font-weight 600
-  line-height 1.25
-  font-family "Source Sans Pro",Helvetica,sans-serif
+strong{
+    font-weight: 600;
+}
 
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+    line-height: 1.25;
+  font-family: 'Merriweather', serif;
+}
 
-a
-  color: #7EBDC2
-
-p, ul, ol
-  line-height 1.7
+a{
+    color: #7EBDC2
+}
+p, ul, ol{
+    line-height: 1.7;
+}
+.main-content{
+    grid-column: 3;
+    max-width: 1250px;
+}
 </style>
 
 <script>

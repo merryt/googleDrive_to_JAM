@@ -134,7 +134,7 @@ function grabFiles(auth){
                     res.data
                        .on('end', () => {
                            resolve("done")
-                           console.log(`Finished writing ${file.name}`);
+                           console.log(`Finished writing the docx for ${file.name}`);
                        })
                        .on('error', err => {
                            reject(err)
@@ -162,7 +162,7 @@ function convertToMarkdown(files){
         let src = file.slugifiedFileName;
         const slugifiedName = slugify(file.name)
         const markdownFileName = `./markdown/${slugifiedName}.md`
-        args = ['-f','docx','-t','markdown+ignore_line_breaks','-o', `./markdown/${slugifiedName}.md`, '--wrap=none'];
+        args = ['-f','docx','-t','markdown+ignore_line_breaks','-o', markdownFileName, '--wrap=none'];
         const callback = (err, result)=> {
             if (err) console.error('Oh Nos: ',err)
             secondpassMDEdit(markdownFileName)

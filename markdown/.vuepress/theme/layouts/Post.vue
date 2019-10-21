@@ -28,7 +28,6 @@ import Navbar from '../components/Navbar.vue';
              let text = this.frontmatter.Title;
              text = text.split(' ');
 
-
              let titleCaseText = ""
              for(var c=0; c < text.length; c++) {
                  titleCaseText += text[c].substring(0,1).toUpperCase() + text[c].substring(1,text[c].length).toLowerCase() + (c+1==text.length ? '' : ' ');
