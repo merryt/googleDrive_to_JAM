@@ -95,7 +95,7 @@ import Navbar from '../components/Navbar.vue';
      color: #3c484e;
  }
  ul > li > p{
-   line-height: 1em;
+   line-height: 1.6em;
    margin: 0;
  }
 </style>
