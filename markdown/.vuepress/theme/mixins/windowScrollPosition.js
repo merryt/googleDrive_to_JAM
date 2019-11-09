@@ -19,19 +19,19 @@ export default function windowScrollPosition(propertyName) {
           this[propertyName] = [
             Math.round(window.pageXOffset),
             Math.round(window.pageYOffset)
-          ]
+          ];
         }
 
         // Call listener once to detect initial position
-        this._scrollListener()
+        this._scrollListener();
 
         // When scrolling, update the position
-        window.addEventListener('scroll', this._scrollListener)
+        window.addEventListener('scroll', this._scrollListener);
       }
     },
     beforeDestroy() {
       // Detach the listener when the component is gone
-      window.removeEventListener('scroll', this._scrollListener)
+      window.removeEventListener('scroll', this._scrollListener);
     }
   }
 }

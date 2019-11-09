@@ -19,5 +19,13 @@ module.exports = {
     head: [
         ['meta', { name: 'google-site-verification', content: '8bkDTzGwYEt1P4NaDKuhxLUJbosgzc0Pz3tPP29wAgE' }]
     ],
-    plugins: [ 'autometa', autometa_options ],
+    plugins: [
+        'autometa', autometa_options,
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-24149420-1' // UA-00000000-0
+            }
+        ]
+    ],
 }
