@@ -6,7 +6,7 @@
         My name is Tyler,<br />
         I make things on the internet
       </h1>
-      <h3>I am not special but you make me feel that way!</h3>
+      <h3>I am not special but you make me feel that way, thanks for checking me out!</h3>
     </div>
     <div class="home--images">
       <img src="/wireframes1.jpg"
