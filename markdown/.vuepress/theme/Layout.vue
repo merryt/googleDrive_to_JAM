@@ -56,17 +56,20 @@ p, ul, ol{
 <script>
  import Home from './layouts/Home.vue'
  import Post from './layouts/Post.vue'
+ import List from './layouts/List.vue'
  import Navbar from './components/Navbar.vue'
  import windowScrollPosition from './mixins/windowScrollPosition.js';
 
  export default{
-     components: {Home, Post, Navbar },
+     components: {Home, Post, List, Navbar },
      mixins: [windowScrollPosition('position')],
      computed: {
          layout(){
              const{path} = this.$page;
              if(path === "/"){
                  return 'Home';
+             }else if(path.startsWith("/articles")){
+                 return 'List';
              }else{
                  return 'Post';
              }

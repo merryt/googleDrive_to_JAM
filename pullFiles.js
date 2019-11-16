@@ -162,7 +162,7 @@ function convertToMarkdown(files){
         let src = file.slugifiedFileName;
         const slugifiedName = slugify(file.name)
         const markdownFileName = `./markdown/${slugifiedName}.md`
-        args = ['-f','docx','-t','markdown+ignore_line_breaks','-o', markdownFileName, '--wrap=none'];
+        args = ['-f','docx','-t','markdown','-o', markdownFileName, '--wrap=none'];
         const callback = (err, result)=> {
             if (err) console.error('Oh Nos: ',err)
             secondpassMDEdit(markdownFileName)
@@ -180,6 +180,15 @@ function secondpassMDEdit(markdownFileName){
         if (err) {return console.log(err);}
 
         var result = data.replace(/\\-\\--/g, '---');
+
+        var whatToSelect = /(?<!\[).*(?!\]\{dir="ltr")/gim
+        var whatToKeep = /(?<=\[).*(?=\]\{dir="ltr")/gim
+        result = result.replace(whatToSelect, function(str){
+            if(str.match(whatToKeep) == null){
+                return ""
+            }
+            return str.match(whatToKeep)
+        })
 
         indexOfEndOfFrontmatter = result.indexOf('---', + 1);
         frontmatter = cleanFrontMatter(result.slice(0, indexOfEndOfFrontmatter + 3));

@@ -3,6 +3,7 @@
     <div class="logo" v-on:click="menuHidden = !menuHidden"><a>TM</a></div>
     <div class="nav-items" v-bind:class="{ hide: menuHidden }" v-on:click="menuHidden = !menuHidden" >
       <a href="/" class="nav-item">Home</a>
+      <a href="/articles.html" class="nav-item">Words</a>
       <a href="/my-design-process.html" class="nav-item">Process</a>
       <a href="https://github.com/merryt" class="nav-item">Code</a>
       <a href="https://www.behance.net/merryt" class="nav-item">Portfolio</a>
@@ -54,8 +55,9 @@
      box-sizing: border-box;
      justify-content: center;
      z-index:301;
-     position: absolute;
-     left: 7px;
+     position: sticky;
+     margin-left: 7px;
+     box-shadow: inset 0px 0px 0px 1px rgba(255,255,255, .25)
  }
 
  .logo a{
@@ -80,12 +82,11 @@
      top: 0;
      left: 0;
      grid-template-columns: 60px auto 50px;
-     grid-template-rows: 7% 7% 7% 7% 7% 7% 7% 7% auto;
+     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% auto;
  }
  @media only screen and (min-device-width: 500px){
      .nav-items{
          grid-template-columns: 5% 70px auto 50px;
-         grid-template-rows: 10% 10% 10% 10% 10% 10% 10% auto;
      }
  }
 
@@ -105,7 +106,7 @@
 
  @media only screen and (min-device-width: 500px){
      .nav-item{
-         font-size: 100px;
+         font-size: 3.2em;
          grid-column-start: 3;
          grid-column-end:4;
      }

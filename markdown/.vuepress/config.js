@@ -12,7 +12,7 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Guide', link: '/guide/' },
+            { text: 'Articles', link: '/articles.html' },
             { text: 'External', link: 'https://google.com' },
         ]
     },

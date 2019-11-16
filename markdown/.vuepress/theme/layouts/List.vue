@@ -1,35 +1,13 @@
 <template>
   <div class="home">
-    <div class="home--hero">
-      <h1>
-        HEY!<br/>
-        My name is Tyler,<br />
-        I make things on the internet
-      </h1>
-      <h3>I am not special but you make me feel that way, thanks for checking me out!</h3>
-    </div>
-    <div class="home--images">
-      <img src="/wireframes1.jpg"
-           class="wireframes1"
-           alt="Pen and paper wireframes can be useful to get ideas down fast!"
-           :style="{transform: 'translateY(' + paralaxMagic + 'px)'}" >
-      <img src="/climbing.jpg" class="climbing" alt="Tyler being a ham on a boat">
-      <img src="/golfcart.jpg" class="golfcart" alt="My friends and I like to get in trouble form time to time">
-      <img src="/speaking1.jpeg"
-           class="speaking1"
-           alt="My friends and I like to get in trouble form time to time"
-           :style="{transform: 'translateX(-' + paralaxMagic + 'px)'}">
-    </div>
-
     <div class="home--info">
-      <h3>What do I do?</h3>
+      <h3>What I have written in the past</h3>
       <div class="hipster-spacer"></div>
-      <p>I like to help people, the way I normally do that is through building easy to use websites that help people solve a problem. I also like to help people fix their bikes and maintain hiking trails.</p>
-      <p>Previously I spoke at conferences, and run meetups in Denver. Now I try to help more one on one!</p>
+      <p>Here are all the articles I have written over the past few years, most of it is rambling non-sense.</p>
     </div>
 
     <div class="home--post-container">
-      <article class="home--post" v-for="post in posts.slice(0, 6)">
+      <article class="home--post" v-for="post in posts">
         <div class="home--post-image" :style="{'background-image': backgroundUrl(post.frontmatter.mainImg)}"></div>
         <div class="home--post-content">
           <h4>
