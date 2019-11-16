@@ -183,6 +183,7 @@ function secondpassMDEdit(markdownFileName){
 
         var whatToSelect = /(?<!\[).*(?!\]\{dir="ltr")/gim
         var whatToKeep = /(?<=\[).*(?=\]\{dir="ltr")/gim
+
         result = result.replace(whatToSelect, function(str){
             if(str.match(whatToKeep) == null){
                 return ""
