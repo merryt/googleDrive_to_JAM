@@ -101,6 +101,8 @@
      font-size:3em;
      transition:all .5s ease-in;
      border-bottom: 5px solid transparent;
+     box-sizing: border-box;
+     margin-bottom: 17px;
  }
 
  @media only screen and (min-device-width: 500px){
