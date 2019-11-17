@@ -2,7 +2,7 @@
   "repository": "github:merryt/Drive_to_Jam",
   "scripts": {
     "dev": "vuepress dev markdown",
-    "build": "vuepress build markdown",
+    "build": "vuepress build markdown && node generate_site_map.js ",
     "pullfiles": "node pullFiles.js"
   },
   "dependencies": {
