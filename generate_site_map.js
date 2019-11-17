@@ -28,7 +28,7 @@ retreiveFileNamesFromFolder = function(targetFolder, callback){
 
 convertFileExtensionToHTML = function(fileName){
     HMTLString = fileName.toString().replace(/\..*/gim, ".html")
-    return "tymerry.com/" + HMTLString
+    return 'https"//tymerry.com/' + HMTLString
 }
 
 saveSitemap = function(arrayOfHTMLFiles){
