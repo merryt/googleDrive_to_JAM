@@ -36,7 +36,7 @@ saveSitemap = function(arrayOfHTMLFiles){
 
     const directoryPath = path.join(__dirname, "./markdown/.vuepress/public/sitemap.txt");
     fs.writeFile(directoryPath, arrayOfHTMLFiles.reduce((accumulator, currentValue)=>{
-        return accumulator + currentValue + "\n"
+        return accumulator + "\n" + currentValue
     }), function(err) {
 
     if(err) {

@@ -1,4 +1,5 @@
-2016-goals.html2016-recap-2017-goals.html
+2016-goals.html
+2016-recap-2017-goals.html
 2017-recap-2018-goals.html
 a-good-programmer-is.html
 about-me.html
