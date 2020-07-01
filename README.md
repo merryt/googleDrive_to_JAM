@@ -7,7 +7,7 @@ the goal of this experiment is to take google drive items and convert them to a 
 - Go to google drive API and generate your credentials.json and save them to getDataFromDrive
 - Setup your config.json to include your target folder
 - If this is your first time  pip install requirements and download [pandoc](http://pandoc.org/installing.html)
-- ``yarn pullfiles` will pull down all the files from your config.json
+- `yarn pullfiles` will pull down all the files from your config.json
 This will create new folders in the projects root called markdown and docx, which we use for vuepress
 
 
